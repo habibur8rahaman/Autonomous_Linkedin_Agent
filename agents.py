@@ -2,9 +2,9 @@ import os
 import main_scraper
 from crewai import Agent, Task, Crew, Process
 
-os.environ["OPENAI_API_BASE"] = 'https://wcn692w77xpoj7-11434.proxy.runpod.net/v1'
+os.environ["OPENAI_API_BASE"] = 'YOUR_OPENAI_API_BASE'
 os.environ["OPENAI_MODEL_NAME"] ='mistral'  # Adjust based on available model
-os.environ["OPENAI_API_KEY"] ='sk-111111111111111111111111111111111111111111111111'
+os.environ["OPENAI_API_KEY"] ='YOUR_OPENAI_API_KEY'
 
 
 
