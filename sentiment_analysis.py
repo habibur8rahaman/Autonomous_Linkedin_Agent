@@ -3,7 +3,7 @@ import re
 
 def query(payload):
     response = requests.post("https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1",
-                             headers={"Authorization": "Bearer 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"}, json=payload)
+                             headers={"Authorization": "Bearer HUGGINGFACE_API_TOKEN"}, json=payload)
     return response.json()
 
 def main(post):
