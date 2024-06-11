@@ -3,7 +3,7 @@ import re
 
 def query(payload):
     response = requests.post("https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1",
-                             headers={"Authorization": "Bearer HUGGINGFACE_API_TOKEN"}, json=payload)
+                             headers={"Authorization": "Bearer YOUR_HUGGINGFACE_ACCESS_TOKEN"}, json=payload)
     return response.json()
 
 def main(post):
@@ -14,6 +14,8 @@ def main(post):
         # print(user_query)
         #print('==================================================')
         output = query({"inputs": (user_query), "max_new_tokens": 1, "return_full_text": False, "temperature": 0.2})
+
+        print(output)
 
         cleaned_response = (output[0]['generated_text']).replace(user_query, "").strip()
 

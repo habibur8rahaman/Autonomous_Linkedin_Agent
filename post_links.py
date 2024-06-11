@@ -10,7 +10,7 @@ def links():
 
     #dots_buttons = driver.find_elements(By.CSS_SELECTOR, ".feed-shared-control-menu__trigger.artdeco-button.artdeco-button--tertiary.artdeco-button--muted.artdeco-button--1.artdeco-button--circle.artdeco-dropdown__trigger.artdeco-dropdown__trigger--placement-bottom.ember-view")
 
-    for i in range(3):
+    for i in range(1):
         driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
 
     time.sleep(3)

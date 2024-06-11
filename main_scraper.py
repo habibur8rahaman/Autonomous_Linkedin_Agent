@@ -89,7 +89,5 @@ def scrap():
         extracted_post(link)
 
 
-
-
 scrap()
 
